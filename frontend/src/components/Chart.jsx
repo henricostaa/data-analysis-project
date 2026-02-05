@@ -17,8 +17,11 @@ function Chart({ results }) {
   }));
 
   return (
-    <div className="chart-container">
-      <h2>Média por coluna</h2>
+    <section className="chart-container panel">
+      <div className="panel-header">
+        <h2>Média por coluna</h2>
+        <p className="muted">Visualização rápida das médias calculadas.</p>
+      </div>
 
       <ResponsiveContainer width="100%" height={300}>
         <BarChart data={data}>
@@ -26,10 +29,10 @@ function Chart({ results }) {
           <XAxis dataKey="name" />
           <YAxis />
           <Tooltip />
-          <Bar dataKey="mean" />
+          <Bar dataKey="mean" fill="#6366f1" radius={[8, 8, 0, 0]} />
         </BarChart>
       </ResponsiveContainer>
-    </div>
+    </section>
   );
 }
 

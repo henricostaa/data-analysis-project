@@ -34,12 +34,26 @@ function FileUpload({setResults}) {
     }
 
   return (
-    <div className="upload-box">
-      <h2>Upload your CSV file</h2>
-      <input type="file" accept=".csv" onChange={(e) => setFile(e.target.files[0])} />
-      <button className="btn" onClick={handleAnalize} disabled={loading}>{loading ? "Analisando..." : "Analizar"}</button>
+    <section className="panel upload-box">
+      <div className="panel-header">
+        <h2>Envie seu CSV</h2>
+        <p className="muted">Selecione um arquivo para gerar estatísticas instantâneas.</p>
+      </div>
+      <div className="upload-controls">
+        <label className="file-input">
+          <span>{file ? file.name : "Escolha o arquivo"}</span>
+          <input
+            type="file"
+            accept=".csv"
+            onChange={(e) => setFile(e.target.files[0])}
+          />
+        </label>
+        <button className="btn" onClick={handleAnalize} disabled={loading}>
+          {loading ? "Analisando..." : "Analisar dados"}
+        </button>
+      </div>
       {error && <p className="error">{error}</p>}
-    </div>
+    </section>
   );
 }
 
