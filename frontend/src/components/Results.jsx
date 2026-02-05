@@ -4,19 +4,32 @@ function Results({ results }) {
   if (!results) return null;
 
   return (
-    <div className='results'>
-      <h2>Resultados</h2>
+    <section className='results panel'>
+      <div className="panel-header">
+        <h2>Resumo estatístico</h2>
+        <p className="muted">Métricas principais por coluna numérica.</p>
+      </div>
 
-      {Object.entries(results).map(([column, stats]) => (
-        <div className='result-card' key={column} style={{ marginBottom: "16px" }}>
-          <strong>{column}</strong>
-
-          <div>Média: {stats.mean}</div>
-          <div>Mínimo: {stats.min}</div>
-          <div>Máximo: {stats.max}</div>
-        </div>
-      ))}
-    </div>
+      <div className="results-grid">
+        {Object.entries(results).map(([column, stats]) => (
+          <div className='result-card' key={column}>
+            <strong>{column}</strong>
+            <div className="result-metric">
+              <span>Média</span>
+              <span>{stats.mean}</span>
+            </div>
+            <div className="result-metric">
+              <span>Mínimo</span>
+              <span>{stats.min}</span>
+            </div>
+            <div className="result-metric">
+              <span>Máximo</span>
+              <span>{stats.max}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
   );
 }
 
