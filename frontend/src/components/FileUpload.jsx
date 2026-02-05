@@ -1,6 +1,5 @@
 import { useState } from "react";
 import api from "../services/api";
-import Results from "./Results";
 
 function FileUpload({setResults}) {
 
@@ -13,7 +12,7 @@ function FileUpload({setResults}) {
             alert("Please select a file first!");
             return;
         }
-        // Logic to handle file analysis goes here
+        
         const formData = new FormData();
         formData.append("file", file);
 
