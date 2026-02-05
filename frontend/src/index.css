@@ -106,13 +106,21 @@ h2 {
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-.upload-box input {
-  margin-bottom: 16px;
+.file-input:hover {
+  border-color: rgba(99, 102, 241, 0.5);
+  box-shadow: 0 0 0 3px rgba(129, 140, 248, 0.2);
+}
+
+.file-input input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
 }
 
 .btn {
   padding: 10px 16px;
-  background-color: #2563eb;
+  background-color: #111827;
   color: #fff;
   border: none;
   border-radius: 999px;
