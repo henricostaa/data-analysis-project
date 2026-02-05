@@ -35,11 +35,11 @@ function FileUpload({setResults}) {
     }
 
   return (
-    <div>
+    <div className="upload-box">
       <h2>Upload your CSV file</h2>
       <input type="file" accept=".csv" onChange={(e) => setFile(e.target.files[0])} />
-      <button onClick={handleAnalize} disabled={loading}>{loading ? "Analisando..." : "Analizar"}</button>
-      {error && <p style={{ color: "red" }}>{error}</p>}
+      <button className="btn" onClick={handleAnalize} disabled={loading}>{loading ? "Analisando..." : "Analizar"}</button>
+      {error && <p className="error">{error}</p>}
     </div>
   );
 }

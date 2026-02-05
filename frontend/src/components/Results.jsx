@@ -4,11 +4,11 @@ function Results({ results }) {
   if (!results) return null;
 
   return (
-    <div>
+    <div className='results'>
       <h2>Resultados</h2>
 
       {Object.entries(results).map(([column, stats]) => (
-        <div key={column} style={{ marginBottom: "16px" }}>
+        <div className='result-card' key={column} style={{ marginBottom: "16px" }}>
           <strong>{column}</strong>
 
           <div>Média: {stats.mean}</div>

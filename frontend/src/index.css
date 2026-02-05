@@ -1,0 +1,99 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo global */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+/* Container principal */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 24px;
+}
+
+/* Títulos */
+h1 {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+h2 {
+  margin-bottom: 16px;
+}
+
+/* Upload */
+.upload-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  margin-bottom: 32px;
+}
+
+.upload-box input {
+  margin-bottom: 16px;
+}
+
+.btn {
+  padding: 10px 16px;
+  background-color: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #1d4ed8;
+}
+
+.btn:disabled {
+  background-color: #93c5fd;
+  cursor: not-allowed;
+}
+
+/* Mensagem de erro */
+.error {
+  margin-top: 12px;
+  color: #dc2626;
+}
+
+/* Resultados */
+.results {
+  margin-top: 32px;
+}
+
+.result-card {
+  background: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  margin-bottom: 16px;
+}
+
+.result-card strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+/* Gráfico */
+.chart-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  margin-top: 40px;
+}
