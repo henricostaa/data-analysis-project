@@ -96,7 +96,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 
 # rodar o servidor
-uvicorn main:app --reload
+uvicorn app.main:app --reload
 ```
 
 Backend disponível em:
