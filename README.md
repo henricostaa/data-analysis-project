@@ -1,12 +1,12 @@
-# 📊 Analisador de CSV com Python e React
+# Analisador de CSV com Python e React
 
 Projeto **full stack** para análise de dados a partir de arquivos CSV. A aplicação permite fazer upload de um CSV, processar os dados no backend em Python e visualizar estatísticas e gráficos no frontend em React.
 
-> 💡 Projeto desenvolvido com foco em **portfólio**, boas práticas de organização de código e integração front-end + back-end.
+> Projeto desenvolvido com foco em **portfólio**, boas práticas de organização de código e integração front-end + back-end.
 
 ---
 
-## 🚀 Funcionalidades
+## Funcionalidades
 
 * Upload de arquivos CSV
 * Leitura e tratamento de dados com **Pandas**
@@ -23,7 +23,7 @@ Projeto **full stack** para análise de dados a partir de arquivos CSV. A aplica
 
 ---
 
-## 🧠 Exemplo de uso
+## Exemplo de uso
 
 1. O usuário faz upload de um arquivo CSV
 2. O backend processa apenas colunas numéricas
@@ -41,7 +41,7 @@ idade,salario,anos_experiencia
 
 ---
 
-## 🛠️ Tecnologias utilizadas
+## Tecnologias utilizadas
 
 ### Frontend
 
@@ -61,7 +61,7 @@ idade,salario,anos_experiencia
 
 ---
 
-## 📂 Estrutura do projeto (Frontend)
+## Estrutura do projeto (Frontend)
 
 ```text
 src/
@@ -78,7 +78,7 @@ src/
 
 ---
 
-## ▶️ Como rodar o projeto localmente
+## Como rodar o projeto localmente
 
 ### 🔹 Backend
 
@@ -125,12 +125,11 @@ http://localhost:5173
 
 ---
 
-## 👨‍💻 Autor
+## Autor
 
-Desenvolvido por **Henrique Costa** 🚀
-Focado em **Desenvolvimento Full Stack e Análise de Dados**.
+Desenvolvido por **Henrique Costa**
 
-📎 GitHub: [https://github.com/henricostaa](https://github.com/henricostaa)
+GitHub: [https://github.com/henricostaa](https://github.com/henricostaa)
 
 ---
 
